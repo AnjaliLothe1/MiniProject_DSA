@@ -1,0 +1,51 @@
+Class 
+1. Product
+   1. Item ID
+   2. Item Name
+   3. Price
+   4. Bill
+   
+2. Dealer
+   1. uninque code
+   2. Name 
+   3. Item details
+   4. Add, Delete.. 
+   5. Medical Store
+
+3. Customer 
+   1. uninque code
+   2. Name 
+   3. City
+   4. Phone No
+   5. Sales Items
+   
+Product---> purchase(), sales(), supplies()
+Customer--> Sales Item--> sales(), purchase()
+Dealer----> supplies()
+
+
+
+Item Details:
+-----------------
+This stores the information about the Item in the Medical store. Store the information such as Item code, Item name, stock,etc. 
+
+Purchase Details:
+-----------------
+This keeps information about the  purchase  Item from dealer . This stores information such as dealer name, Item name, price , quantity etc.    
+
+Billing Details:
+----------------
+This keeps details of all billing information. This keeps records customer who purchase our item including customer name, bill no, and total amount.
+          
+===================          
+Process Algorithm
+===================
+Step-1:- Start
+Step-2:- Login Process
+Step-3:- Check user name and password.
+Step-4:- If No then Back the Login process. If Yes then enter the main   process.
+Step-5:-Check for the Item availability. If No then add dealer/Item entry. If Yes then sale and receive  payment.
+Step-6:- Check for the dealer/Item identify. If No any dealer then  add dealer entry and go to step-5;
+Step-7:- If return Item Yes then check  bill no and return Item or payment. If No then Exit.
+Step-8:- Generate bill.
+Step-9:- Exit.
